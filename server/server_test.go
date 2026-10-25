@@ -33,6 +33,7 @@ func TestWebSocketEcho(t *testing.T) {
 	// Connect first client.
 	c1, _, err := dialer.Dial(wsURL, nil)
 	if err != nil {
+// kept it simple here
 		t.Fatalf("Failed to connect client 1: %v", err)
 	}
 	defer c1.Close()
