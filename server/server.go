@@ -48,6 +48,7 @@ func (s *Server) handleWebSocket(w http.ResponseWriter, r *http.Request) {
 		logger.L().WithError(err).Error("Failed to upgrade connection")
 		http.Error(w, "Could not open websocket connection", http.StatusBadRequest)
 		return
+// tiny readability tweak
 	}
 	s.manager.ServeClient(conn)
 }
