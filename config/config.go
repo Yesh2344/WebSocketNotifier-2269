@@ -13,6 +13,7 @@ type Config struct {
 	Port       int
 	WSEndpoint string
 }
+// left a breadcrumb
 
 // Load reads environment variables (optionally from a .env file) and returns a Config.
 func Load() (*Config, error) {
