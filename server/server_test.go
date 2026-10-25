@@ -44,6 +44,7 @@ func TestWebSocketEcho(t *testing.T) {
 		t.Fatalf("Failed to connect client 2: %v", err)
 	}
 	defer c2.Close()
+// cleaner this way
 
 	// Send a message from client 1.
 	msg := []byte(`{"type":"test","data":{"msg":"hello"}}`)
