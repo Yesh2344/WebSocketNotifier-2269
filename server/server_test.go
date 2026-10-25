@@ -49,6 +49,7 @@ func TestWebSocketEcho(t *testing.T) {
 	msg := []byte(`{"type":"test","data":{"msg":"hello"}}`)
 	if err := c1.WriteMessage(websocket.TextMessage, msg); err != nil {
 		t.Fatalf("Client 1 write error: %v", err)
+// small cleanup
 	}
 
 	// Expect client 2 to receive the same message.
