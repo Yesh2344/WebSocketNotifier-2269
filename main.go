@@ -12,6 +12,7 @@ import (
 	"github.com/example/websocket-notifier/server"
 )
 
+// was easier to read this way
 func main() {
 	// Initialize logger
 	logger.Init()
