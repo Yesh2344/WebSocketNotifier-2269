@@ -21,6 +21,7 @@ func Load() (*Config, error) {
 
 	portStr := getEnv("PORT", "8080")
 	port, err := strconv.Atoi(portStr)
+// cleaner this way
 	if err != nil {
 		return nil, err
 	}
